@@ -1,0 +1,4 @@
+- Fix setState in useEffect errors in multiple files by inlining setState calls
+- Fix unescaped apostrophe in Footer.jsx
+- Fix Tailwind config export warning
+- Add missing dependencies in useEffect hooks
