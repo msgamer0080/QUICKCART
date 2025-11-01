@@ -14,12 +14,13 @@ if (!cached.promise){
     const opts = {
         bufferCommands: false
     }
-    cached.promise= (await mongoose.connect('${process.env.MONGODB_URI}/QuickCart',opts)).then(mongoose =>{
+    cached.promise= (await mongoose.connect('mongodb+srv://rismohitsharma:<db_password>@cluster0.badifav.mongodb.net/QuickCart',opts)).then(mongoose =>{
         return mongoose
 })
 }
 cached.conn= await cached.promise
 return cached.conn
 }
+
 
 export default connectDB
